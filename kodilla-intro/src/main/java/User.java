@@ -11,12 +11,14 @@ public class User {
         this.height = height;
     }
 
-    void Validate
+    void Validate {
 
-    {
-        this.name = "Adam";
-        this.age = 40.5;
-        this.height = 178;
+        boolean nameIsntNull = true;
+        System.out.println("his name is adam.");
+        boolean heIsOlderThan30 = true;
+        System.out.println("He is 40.5 years old.");
+        boolean heIsHigherthan160CM = true;
+        System.out.println("He is 178 cm tall.");
     }
 }
 
