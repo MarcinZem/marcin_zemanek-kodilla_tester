@@ -12,9 +12,12 @@ public class User {
     }
 
     void Validate
-            this.name = "Adam";
-            this.age = 40.5;
-            this.height = 178;
+
+    {
+        this.name = "Adam";
+        this.age = 40.5;
+        this.height = 178;
+    }
 }
 
 
