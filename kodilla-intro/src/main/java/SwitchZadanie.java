@@ -1,9 +1,10 @@
 public class SwitchZadanie {
+
     public String Choose() {
         String userSelected = UserDialogs.getUserSelection();
-        String a = UserDialogs.getUserSelection();
+        String a = UserDialogs.class
         String color = "Blue, Cyan, Yellow, Magenta, White";
-        String result = color;
+        String result = null;
         switch (userSelected) {
             case "Blue":
                 result = a;
