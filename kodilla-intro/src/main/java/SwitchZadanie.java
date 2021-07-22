@@ -5,20 +5,20 @@ public class SwitchZadanie {
         String color = "Blue, Cyan, Yellow, Magenta, White";
         String result = null;
         switch (userSelected) {
-            case "Blue":
-                result = "B";
+            case "B":
+                result = "Blue";
                 break;
-            case "Cyan":
-                result = "C";
+            case "C":
+                result = "Cyan";
                 break;
-            case "Yellow":
-                result = "Y";
+            case "Y":
+                result = "Yellow";
                 break;
-            case "Magenta":
-                result = "M";
+            case "M":
+                result = "Magenta";
                 break;
-            case "White":
-                result = "W";
+            case "W":
+                result = "White";
                 break;
 
         }

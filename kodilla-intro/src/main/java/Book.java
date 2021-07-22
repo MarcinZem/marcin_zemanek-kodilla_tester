@@ -1,25 +1,25 @@
 public class Book {
 
-        private String author;
-        private String title;
+    private String author;
+    private String title;
 
 
-        public Book(String author,String title){
-            this.author = "Henryk Sienkiewicz";
-            this.title = "W pustyni i w puszczy";
-        }
+    public Book(String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
 
-        public void main(String[]args){
-            System.out.println(this.author, this.title);
-        }
+    public static void main(String[] args) {
+        Book book = Book.of("Isaac Asimov", "The Galaxy");
+        System.out.println(book);
+    }
 
-        private static Book of(String author,String title){
+    private static Book of(String author, String title) {
 
 
-            Book book=Book.of(this.author,this.title);
+        Book book = new Book(author, title);
+        return book;
 
-            return book;
-
-        }
     }
 }
+
