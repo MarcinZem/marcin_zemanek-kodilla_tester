@@ -25,18 +25,5 @@ public class VW implements Car {
         return speed - 30;
     }
 
-    @Override
-    public int doRace(VW vw) {
-        return 0;
-    }
-
-    @Override
-    public int doRace(Seat seat) {
-        return 0;
-    }
-
-    @Override
-    public int doRace(Skoda skoda) {
-        return 0;
-    }
 }
+

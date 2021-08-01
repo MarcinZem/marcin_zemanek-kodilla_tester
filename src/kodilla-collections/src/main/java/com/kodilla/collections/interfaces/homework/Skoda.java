@@ -1,6 +1,6 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Skoda implements Car{
+public class Skoda implements Car {
 
     private int speed;
 
@@ -24,19 +24,5 @@ public class Skoda implements Car{
 
         return speed - 20;
     }
-
-    @Override
-    public int doRace(VW vw) {
-        return 0;
-    }
-
-    @Override
-    public int doRace(Seat seat) {
-        return 0;
-    }
-
-    @Override
-    public int doRace(Skoda skoda) {
-        return 0;
-    }
 }
+

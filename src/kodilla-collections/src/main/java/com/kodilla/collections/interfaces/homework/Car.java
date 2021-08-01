@@ -8,7 +8,4 @@ public interface Car {
 
     int decreaseSpeed();
 
-    int doRace(VW vw);
-    int doRace(Seat seat);
-    int doRace(Skoda skoda);
 }

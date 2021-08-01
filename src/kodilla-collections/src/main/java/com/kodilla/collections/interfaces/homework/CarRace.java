@@ -17,8 +17,7 @@ public class CarRace {
     private static void doRace(Seat seat) {
         System.out.println(seat.getSpeed());
     }
-    private static void doRace(Skoda skoda) {
-        System.out.println(skoda.getSpeed());
+    private static void doRace(Skoda skoda) { System.out.println(skoda.getSpeed());
     }
 
 }
