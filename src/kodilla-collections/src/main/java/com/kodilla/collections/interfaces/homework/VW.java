@@ -5,12 +5,12 @@ public class VW implements Car {
     private int speed;
 
     public VW(int speed) {
-        this.speed = speed;
+        this.speed = getSpeed();
     }
 
     @Override
     public int getSpeed() {
-        return 3 * increaseSpeed() + 2 * decreaseSpeed();
+        return speed;
     }
 
     @Override

@@ -10,19 +10,19 @@ public class Seat implements Car{
 
     @Override
     public int getSpeed() {
-        return 3 * increaseSpeed() + 2 * decreaseSpeed();
+        return speed;
     }
 
     @Override
     public int increaseSpeed() {
 
-        return speed + 60;
+        return speed + 40;
     }
 
     @Override
     public int decreaseSpeed() {
 
-        return speed - 25;
+        return getSpeed() - 25;
     }
 
 }
