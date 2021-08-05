@@ -2,12 +2,12 @@ package com.kodilla.collections.sets.homework;
 
 import java.util.Objects;
 
-public class stamp {
+public class Stamp {
     private double wymiary;
     private String nazwa;
     private String czyOstemplowany;
 
-    public stamp(double wymiary, String nazwa, String czyOstemplowany) {
+    public Stamp(double wymiary, String nazwa, String czyOstemplowany) {
         this.wymiary = wymiary;
         this.nazwa = nazwa;
         this.czyOstemplowany = czyOstemplowany;
@@ -30,7 +30,7 @@ public class stamp {
             return true;
         if (o == null || getClass() != o.getClass())
             return false;
-        stamp stamp = (stamp) o;
+        Stamp stamp = (Stamp) o;
         return Double.compare(stamp.wymiary, wymiary) == 0
                 && this.nazwa.equals(stamp.nazwa)
                 && this.czyOstemplowany.equals(stamp.czyOstemplowany);
@@ -46,3 +46,4 @@ public class stamp {
                 + nazwa + '\'' + ", czyOstemplowany=" + czyOstemplowany + '}';
     }
 }
+
