@@ -6,20 +6,22 @@ public class CarRace {
     public static void main(String[] args) {
 
         VW vw = new VW(0);
-        doRace(vw, getSpeed);
         Seat seat = new Seat(0);
-        doRace(seat, getSpeed);
         Skoda skoda = new Skoda(0);
-        doRace(skoda, getSpeed);
+        doRace(vw);
+        doRace(seat);
+        doRace(skoda);
     }
 
-    private static void doRace(Car car, int getSpeed) {
+    private static void doRace(Car car) {
         car.increaseSpeed();
         car.increaseSpeed();
         car.increaseSpeed();
         car.decreaseSpeed();
         car.decreaseSpeed();
-        System.out.println(getSpeed);
-    }
 
+        System.out.println(car.getSpeed());
+        }
 }
+
+

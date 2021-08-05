@@ -14,15 +14,15 @@ public class Seat implements Car{
     }
 
     @Override
-    public int increaseSpeed() {
+    public void increaseSpeed() {
 
-        return speed + 40;
+        speed = speed +50;
     }
 
     @Override
-    public int decreaseSpeed() {
+    public void decreaseSpeed() {
 
-        return getSpeed() - 25;
+        speed = speed - 25;
     }
 
 }
