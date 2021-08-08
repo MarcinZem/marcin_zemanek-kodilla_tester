@@ -23,7 +23,7 @@ public class SchoolDirectory {
         for (Map.Entry<School, Principal> SchoolEntry : classRoom.entrySet())
             System.out.println(SchoolEntry.getKey().getAverage());
         for (Map.Entry<School, Principal> PrincipalEntry : classRoom.entrySet())
-            System.out.println(PrincipalEntry;
+            System.out.println(PrincipalEntry);
 
     }
 }
