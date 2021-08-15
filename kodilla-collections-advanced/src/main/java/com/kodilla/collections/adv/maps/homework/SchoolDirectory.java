@@ -21,8 +21,6 @@ public class SchoolDirectory {
         System.out.println(classRoom.get(oxford));
 
         for (Map.Entry<Principal, School> SchoolEntry : classRoom.entrySet())
-            System.out.println(SchoolEntry.getKey().getFirstname());
-        for (Map.Entry<Principal, School> SchoolEntry : classRoom.entrySet())
-            System.out.println(SchoolEntry.getValue().getAverage());
+            System.out.println(SchoolEntry.getKey().getFirstname() + ", Average " + SchoolEntry.getValue().getAverage());
     }
 }
