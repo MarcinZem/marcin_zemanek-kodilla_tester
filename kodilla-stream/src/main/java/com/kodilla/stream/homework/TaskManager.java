@@ -9,6 +9,7 @@ public class TaskManager {
         List<LocalDate> localDates = TaskRepository.getTasksList()
             .stream()
             .map(v -> v.getlocalDateDeadline())
+                .filter(v -> v.getClass().equals())
             .forEach(vu -> System.out.println(vu))
             .collect(Collectors.toList());
         System.out.println(localDates);
