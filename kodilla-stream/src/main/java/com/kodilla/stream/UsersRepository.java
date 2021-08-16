@@ -6,12 +6,12 @@ import java.util.List;
 public class UsersRepository {
     public static List<User> getUsersList() {
         List<User> users = new ArrayList<>();
-        users.add(new User("Chemists", 50, 7, "Walter White"));
-        users.add(new User("Sales", 25, 4648, "Jessie Pinkman"));
-        users.add(new User("Manager", 34, 116, "Tuco Salamanca"));
-        users.add(new User("Board", 49, 0, "Gus Firing"));
-        users.add(new User("Chemists", 44, 2, "Gale Boetticher"));
-        users.add(new User("Security", 57, 0, "Mike Ehrmantraut"));
+        users.add(new User("Walter White", 50, 7, "Chemists"));
+        users.add(new User("Jessie Pinkman", 25, 4648, "Sales"));
+        users.add(new User("Tuco Salamanca", 34, 116, "Manager"));
+        users.add(new User("Gus Firing", 49, 0, "Board"));
+        users.add(new User("Gale Boetticher", 44, 2, "Chemists"));
+        users.add(new User("Mike Ehrmantraut", 57, 0, "Security"));
         return users;
     }
 }
