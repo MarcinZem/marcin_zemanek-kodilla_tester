@@ -7,6 +7,7 @@ public class WarehouseApp {
 
         Order addOrder (Order order){
             new order
+                    //nie istniejące zam "141"
         }
     }
 }
