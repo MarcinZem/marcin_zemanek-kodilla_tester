@@ -9,14 +9,15 @@ class WarehouseTestSuite {
     @Test
     public void TestIsOrderInSystem() throws OrderDoesntExistException {
         Warehouse warehouse = new Warehouse();
-        String isOrdero2InSystem = warehouse.isOrderInSystem("124");
-        assertTrue(Boolean.parseBoolean(isOrdero2InSystem));
+        warehouse.addOrder("124");
+        Order isOrderInSystem = warehouse.getOrder("124");
+        assertNotNull(isOrderInSystem);
     }
 
     @Test
     public void TestIsOrderInSystem_withException() {
         Warehouse warehouse = new Warehouse();
-        assertThrows(OrderDoesntExistException.class, () -> warehouse.isOrderInSystem("141"));
+        assertThrows(OrderDoesntExistException.class, () -> warehouse.getOrder("141"));
     }
 
 }

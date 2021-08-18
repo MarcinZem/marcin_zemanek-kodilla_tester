@@ -4,11 +4,11 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Task {
-    private int localDateOpened;
-    private int localDateDeadline;
+    private LocalDate localDateOpened;
+    private LocalDate localDateDeadline;
     private String task;
 
-    public Task(int localDateOpened, String task, int localDateDeadline) {
+    public Task(LocalDate localDateOpened, String task, LocalDate localDateDeadline) {
         this.localDateOpened = localDateOpened ;
         this.localDateDeadline = localDateDeadline;
         this.task = task;
@@ -18,14 +18,13 @@ public class Task {
         return task;
     }
 
-    public int getlocalDateOpened() {
+    public LocalDate getlocalDateOpened() {
         return localDateOpened;
     }
 
-    public int getlocalDateDeadline() {
+    public LocalDate getlocalDateDeadline() {
         return localDateDeadline;
     }
-    LocalDate myDate = LocalDate.of(2021, 8, 15);
 
     @Override
     public boolean equals(Object o) {

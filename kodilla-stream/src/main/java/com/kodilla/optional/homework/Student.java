@@ -5,8 +5,9 @@ public class Student {
     String name;
     Teacher teacher;
 
-    public Student(String student, String teacher) {
-        this.name = name;
+    public Student(String student, Teacher teacher) {
+        this.name = student;
+        this.teacher = teacher;
     }
 
     public Student(Teacher teacher) {
