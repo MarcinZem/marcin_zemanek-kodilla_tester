@@ -6,4 +6,7 @@ include 'src:kodilla-collections'
 findProject(':src:kodilla-collections')?.name = 'kodilla-collections'
 include 'kodilla-collections-advanced'
 include 'kodilla-stream'
+include 'kodilla-advanced-tests'
+include 'src:main:kodilla-advanced-tests'
+findProject(':src:main:kodilla-advanced-tests')?.name = 'kodilla-advanced-tests'
 
