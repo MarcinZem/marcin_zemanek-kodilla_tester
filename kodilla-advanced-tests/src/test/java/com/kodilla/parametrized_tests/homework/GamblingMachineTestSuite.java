@@ -12,7 +12,7 @@ class GamblingMachineTestSuite {
 private GamblingMachine machine = new GamblingMachine();
 
 @ParameterizedTest
-@CsvFileSource(resources = "/gamblingMachine.csv", numLinesToSkip = 1)
+@CsvFileSource(resources = "gamblingMachine.csv", numLinesToSkip = 1)
 public void shouldWinInGamblingMachine(Integer input, String expected) throws InvalidNumbersException {
     assertEquals(expected, machine.howManyWins(Collections.singleton(input)));
 }
