@@ -2,20 +2,17 @@ package com.kodilla.mockito.homework;
 
 import com.kodilla.mockito.Client;
 
-import java.util.HashSet;
-import java.util.Set;
-
 
 public class WeatherAlert {
 
-    private Set<Client> clients = new HashSet<>();
+   // private Set<Client> clients = new HashSet<>();
 
     public void addSubscriber(Client client) {
-        this.clients.add(client);
+        //this.clients.add(client);
     }
 
     public void sendNotification(Notification notification) {
-        this.clients.forEach(client -> client.receive(notification));
+       // this.clients.forEach(client -> client.receive(notification));
     }
 
 
