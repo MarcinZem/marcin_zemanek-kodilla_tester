@@ -1,18 +1,27 @@
 package com.kodilla.mockito.homework;
 
-import com.kodilla.mockito.Client;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class WeatherAlert {
 
-   // private Set<Client> clients = new HashSet<>();
+   private Map<Localization, List<Client>> clients = new HashMap<>();
 
-    public void addSubscriber(Client client) {
-        //this.clients.add(client);
+    public void addSubscriber(Client client, Localization localization) {
+        if (clients.containsKey(localization)) {
+            clients.get(localization).add(client);
+        } else {
+            List<Client> clientsToAdd = new ArrayList<>();
+            clientsToAdd.add(client);
+            clients.put(localization, clientsToAdd);
+        }
     }
 
     public void sendNotification(Notification notification) {
-       // this.clients.forEach(client -> client.receive(notification));
+      // this.clients.forEach(client -> client.receive(notification));
     }
 
 

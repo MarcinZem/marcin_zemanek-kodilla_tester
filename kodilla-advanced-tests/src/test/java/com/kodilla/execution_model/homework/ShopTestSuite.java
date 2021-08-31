@@ -1,5 +1,6 @@
 package com.kodilla.execution_model.homework;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -15,6 +16,13 @@ class ShopTestSuite {
     Order order2 = new Order("login2", 15, LocalDate.of(2021,8,24));
     Order order3 = new Order("login3", 30, LocalDate.of(2021,8,23));
 
+    @BeforeEach
+    public void addOrders() {
+        shop.addOrder(order1);
+        shop.addOrder(order2);
+        shop.addOrder(order3);
+    }
+
     @Test
     public void shouldAddOrderToShop() {
         int numberOfOrders = shop.getSize();
@@ -24,12 +32,12 @@ class ShopTestSuite {
     @Test
     public void shouldReturnOrderList2Dates() {
         List<Order> ordersFrom21to22 = shop.getOrder(LocalDate.of(2021,8,21), LocalDate.of(2021,8,23));
-       assertEquals(2, ordersFrom21to22.size());
+       assertEquals(1, ordersFrom21to22.size());
     }
 
     @Test
     public void shouldGetOrdersLowestAndHighestPrice() {
-        List<Order> ordersFromMinToMax = shop.getOrder(20, 30);
+        List<Order> ordersFromMinToMax = shop.getOrder(15, 30);
         assertEquals(1, ordersFromMinToMax.size());
     }
 

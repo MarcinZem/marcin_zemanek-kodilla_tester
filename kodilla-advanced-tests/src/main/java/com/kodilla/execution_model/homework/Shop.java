@@ -34,6 +34,13 @@ public class Shop {
         }
         return results;
     }
+    public int sumPrice() {
+        int result = 0;
+        for (Order order : orders) {
+               result = result + order.getCena();
+        }
+        return result;
+        }
     int sumPrices(int Price1, int Price2, int Price3) {
         return Price1 + Price2 + Price3;
     }

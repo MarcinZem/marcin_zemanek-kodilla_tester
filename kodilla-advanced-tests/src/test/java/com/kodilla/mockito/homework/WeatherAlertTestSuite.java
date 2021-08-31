@@ -12,7 +12,7 @@ class WeatherAlertTestSuite {
     public void subscriberShouldBeSavedToGivenLocalization() {
         Notification notification = Mockito.mock(Notification.class);
 
-       // weatherAlert.setLocalization(client);
+        weatherAlert.setLocalization(client);
         weatherAlert.sendNotification(notification);
         Mockito.verify(client, Mockito.only()).receive(notification);
     }
@@ -20,9 +20,9 @@ class WeatherAlertTestSuite {
     @Test
     public void clientCouldUnsubscribeGivenLocalization() {
         Notification notification = Mockito.mock(Notification.class);
-      //  weatherAlert.addSubscriptionToGivenLocalization(client);
+        weatherAlert.addSubscriptionToGivenLocalization(client);
         notification = Mockito.mock(Notification.class);
-       // weatherAlert.removeSubscriptionFromGivenLocalization(client);
+        weatherAlert.removeSubscriptionFromGivenLocalization(client);
 
         weatherAlert.sendNotification(notification);
         Mockito.verify(client, Mockito.never()).receive(notification);
@@ -39,7 +39,7 @@ class WeatherAlertTestSuite {
 
     @Test
     public void notificationShouldBeSendToGivenLocalization() {
-       // weatherAlert.addSubscriptionToGivenLocalization(client);
+        weatherAlert.addSubscriptionToGivenLocalization(client);
         Notification notification = Mockito.mock(Notification.class);
 
         weatherAlert.sendNotification(notification);
@@ -50,7 +50,7 @@ class WeatherAlertTestSuite {
     public void notificationShouldBeSendToAllSubscribers() {
         Client secondClient = Mockito.mock(Client.class);
         Client thirdClient = Mockito.mock(Client.class);
-        //weatherAlert.addSubscriber(client);
+       // weatherAlert.addSubscriber(client);
        // weatherAlert.addSubscriber(secondClient);
         //weatherAlert.addSubscriber(thirdClient);
         Notification notification = Mockito.mock(Notification.class);
@@ -65,9 +65,9 @@ class WeatherAlertTestSuite {
     public void clientCouldDeleteGivenLocalization() {
         Notification notification = Mockito.mock(Notification.class);
 
-      //  weatherAlert.setLocalization(client);
+        weatherAlert.setLocalization(client);
         weatherAlert.sendNotification(notification);
-       // weatherAlert.removeLocalization(client);
+        weatherAlert.removeLocalization(client);
         weatherAlert.sendNotification(notification);
         Mockito.verify(client, Mockito.never()).receive(notification);
     }
