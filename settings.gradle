@@ -9,4 +9,5 @@ include 'kodilla-stream'
 include 'kodilla-advanced-tests'
 include 'src:main:kodilla-advanced-tests'
 findProject(':src:main:kodilla-advanced-tests')?.name = 'kodilla-advanced-tests'
+include 'kodilla-spring-basic'
 

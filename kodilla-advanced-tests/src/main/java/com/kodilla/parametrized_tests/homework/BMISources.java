@@ -9,7 +9,7 @@ public class BMISources {
     static Stream<Arguments> provideStringForBMITesting() {
         return Stream.of(
                 Arguments.of("Very severely underweight", 2.0, 50),
-        Arguments.of("Severely underweight", 1.95, 60),
+                Arguments.of("Severely underweight", 1.95, 60),
                 Arguments.of("Underweight", 1.8, 55),
                 Arguments.of("Normal (healthy weight)", 1.8, 70),
                 Arguments.of("Overweight", 1.8, 95),
