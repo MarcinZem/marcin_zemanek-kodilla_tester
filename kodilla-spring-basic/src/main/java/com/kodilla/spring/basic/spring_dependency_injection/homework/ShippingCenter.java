@@ -10,6 +10,7 @@ public class ShippingCenter {
     private DeliveryService deliveryService;
     private NotificationService notificationService;
 
+    @Autowired
     public String sendPackage(String address, double weight) {
         if (deliveryService.deliverPackage(address, weight)) {
             return notificationService.success(address);
