@@ -8,9 +8,9 @@ public class ShippingCenter {
 
     @Autowired
     private DeliveryService deliveryService;
+    @Autowired
     private NotificationService notificationService;
 
-    @Autowired
     public String sendPackage(String address, double weight) {
         if (deliveryService.deliverPackage(address, weight)) {
             return notificationService.success(address);
