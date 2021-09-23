@@ -1,29 +1,25 @@
 package com.kodilla.spring.basic.spring_configuration.homework;
 
-//@Configuration
-//public class CarFactory {
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-  //  @Bean
-   // public Car carForTheSeason() {
-      //  Car car;
-     //   Random generator = new Random();
-      //  String chosen = generator.toString();
-       // if (chosen == "winter") {
-       //     car = new SUV();
-      //  } else if (chosen == "summer") {
-      //      car = new Cabrio();
-      //  } else {
-       //     car = new Sedan();
-       // }
-      //  return car;
-   // }
+import java.time.LocalDate;
 
-       // @Bean
-       // public Car lightsTurnedOn() {
-           // Car car;
-           // boolean hour;
-          //  if (hour )
-       // }
+@Configuration
+public class CarFactory {
 
-   // }
+    @Bean
+    public Car carForTheSeason() {
+        Car car;
+        LocalDate date = LocalDate.now();
+        if (date.getMonthValue() == 12 || date.getMonthValue() == 1 || date.getMonthValue() == 2) {
+            car = new SUV();
+        } else if (date.getMonthValue() == 6 || date.getMonthValue() == 7 || date.getMonthValue() == 8) {
+            car = new Cabrio();
+        } else {
+            car = new Sedan();
+        }
+        return car;
+    }
+}
 
