@@ -25,6 +25,5 @@ class BookController {
     public void addBook(@RequestBody BookDto bookDto) {  // [2]
         bookService.addBook(bookDto);
     }
-    public void remove(BookDto bookDto) {
-    }
+    public void remove(BookDto bookDto) { bookService.remove(bookDto); }
 }
