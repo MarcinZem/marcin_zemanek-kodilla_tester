@@ -12,4 +12,5 @@ findProject(':src:main:kodilla-advanced-tests')?.name = 'kodilla-advanced-tests'
 include 'kodilla-spring-basic'
 include 'kodilla-rest-api'
 include 'kodilla-selenium'
+include 'kodilla-google-selenium'
 
