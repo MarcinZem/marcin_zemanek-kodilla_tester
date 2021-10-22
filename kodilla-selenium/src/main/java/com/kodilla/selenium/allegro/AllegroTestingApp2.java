@@ -32,9 +32,9 @@ public class AllegroTestingApp2 {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        List<WebElement> results = driver.findElements(By.cssSelector("section>.mx7m_1 mnyp_co mlkp_ag _9c44d_19pGn"));
+        List<WebElement> results = driver.findElements(By.cssSelector("section > article.mx7m_1"));
 
-        results.get(1).getText();
+        System.out.println(results.get(1).getText());
 
     }
 }
